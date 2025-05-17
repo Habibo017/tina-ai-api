@@ -1,6 +1,10 @@
 MIT License
 
+<<<<<<< HEAD
 Copyright (c) 2025 Habibo017
+=======
+Copyright (c) 2025 Eliobros Tech
+>>>>>>> af51488 (Minha biblioteca)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -12,6 +16,12 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
+<<<<<<< HEAD
+=======
+Additionally, if you modify this software or use it in your projects, please
+keep the credit to Eliobros Tech as the original author of the code.
+
+>>>>>>> af51488 (Minha biblioteca)
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE

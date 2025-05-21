@@ -21,7 +21,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/seu-usuario/tina-ai-api.git"
+    "url": "git+https://github.com/Habibo017/tina-ai-api.git"
   },
   "engines": {
     "node": ">=14"

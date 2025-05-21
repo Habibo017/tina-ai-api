@@ -1,4 +1,3 @@
-
 # tina-ai-api
 
 Biblioteca Node.js para comunicação simples com a API da Tina, uma assistente virtual baseada em IA.
@@ -86,6 +85,9 @@ Esta biblioteca não exige que você informe nenhuma chave de API (API Key) ao u
 Todas as autenticações e chaves necessárias já estão protegidas e configuradas no backend da API pública da Tina, que você acessa via URL.
 
 Isso significa que você só precisa chamar os métodos fornecidos (chat, analyzeImage, etc.) passando os parâmetros necessários, sem se preocupar com tokens ou segredos.
+
+
+---
 
 Vantagens
 

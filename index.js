@@ -1,6 +1,6 @@
 // tina-ai-api/index.js
 const fs = require('fs').promises;
-const fetch = require('node-fetch');
+const fetch = global.fetch || require('node-fetch');
 const axios = require('axios');
 
 const TINA_API_BASE = 'http://108.181.199.60:3000/api/tina';

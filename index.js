@@ -5,6 +5,14 @@ const axios = require('axios');
 
 const TINA_API_BASE = 'http://108.181.199.60:3000/api/tina';
 
+/**
+ * Envia uma mensagem para a IA Tina e retorna a resposta.
+ * @param {Object} params
+ * @param {string} params.message - A mensagem a ser enviada para a IA.
+ * @param {string} params.userId - Um identificador único do usuário.
+ * @returns {Promise<string>} - Retorna a resposta da IA Tina.
+ * @throws {Error} - Se ocorrer um erro ao enviar ou receber a resposta.
+ */
 async function chat({ message, userId }) {
   if (!message || !userId) throw new Error('message e userId são obrigatórios');
 
@@ -17,11 +25,25 @@ async function chat({ message, userId }) {
   }
 }
 
+/**
+ * Geração de imagem ainda está em desenvolvimento.
+ * @throws {Error} - Função ainda não implementada.
+ */
 async function imageGen() {
-  // Placeholder, pois está em desenvolvimento
   throw new Error('imageGen ainda está em desenvolvimento');
 }
 
+/**
+ * Analisa uma imagem com base em base64, URL ou caminho do arquivo e retorna uma descrição.
+ * @param {Object} params
+ * @param {string} [params.imageBase64] - Imagem em base64 (opcional).
+ * @param {string} [params.imageUrl] - URL da imagem (opcional).
+ * @param {string} [params.imagePath] - Caminho da imagem no disco (opcional).
+ * @param {string} [params.path] - Caminho do arquivo da imagem, usado com imagePath (opcional).
+ * @param {string} [params.prompt="Descreva esta imagem"] - Prompt a ser enviado para a IA.
+ * @returns {Promise<string>} - Retorna a descrição gerada pela IA.
+ * @throws {Error} - Se não for fornecida nenhuma imagem ou se ocorrer erro na API.
+ */
 async function analyzeImage({ imageBase64, imageUrl, imagePath, path, prompt = "Descreva esta imagem" }) {
   try {
     if (imagePath && path) {
@@ -76,6 +98,10 @@ async function analyzeImage({ imageBase64, imageUrl, imagePath, path, prompt = "
   }
 }
 
+/**
+ * Cria uma instância da biblioteca Tina AI.
+ * @returns {{ chat: typeof chat, imageGen: typeof imageGen, analyzeImage: typeof analyzeImage }}
+ */
 function createLib() {
   return { chat, imageGen, analyzeImage };
 }

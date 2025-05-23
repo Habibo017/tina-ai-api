@@ -112,4 +112,3 @@ module.exports = { createLib };
  * © 2025 Eliobros Tech. Todos os direitos reservados.
  * Proibida a cópia, modificação ou distribuição sem autorização.
  */
-
